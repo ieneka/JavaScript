@@ -46,30 +46,39 @@ while (contador<cosas.length){
 } */
 
 //EXERCICI 8
-/*var valor1=prompt("Introduce el primer numero");
-var valor2=prompt("Introduce el segundo numero");
+/*var repetir="si";
+    
+        function sumar(num1, num2){
+            alert("La suma es: " + (num1 +num2));
+        }
+        function restar(num1, num2){
+            alert("La resta es: " + (num1 -num2));
+        }
+        function multiplicar(num1, num2){
+            alert("La multiplicación es: " + (num1 *num2));
+        }
+        function dividir(num1, num2){
+            alert("La división es: " + (num1 /num2));
+        }
+    do{
+        var operacion=prompt("Que operación desea realizar?");
+        var operador1=parseInt(prompt("Introduce el primer numero"));
+        var operador2=parseInt(prompt("Introduce el segundo numero"));
 
-if(!isNaN(valor1) && !isNaN(valor2)){
-
-    var operador=prompt("Que operacion quieres hacer? suma/resta/multiplicación");
-
-    if (operador=="suma"){
-        alert(parseInt(valor1)+parseInt(valor2));
-    }
-    else if (operador=="resta"){
-        alert(parseInt(valor1)-parseInt(valor2));
-    }
-    else if (operador=="multiplicacion" || operador=="multiplicación"){
-        alert(parseInt(valor1)*parseInt(valor2));
-    }
-    else{
-        alert("No es posible esa operacion");
-    }
-
-}
-else{
-    if(typeof(valor1)=="string" || typeof(valor2)=="string"){
-    alert("No has introducido valores numericos");
-    }
-    else("Ha ocurrido un error no identificado");
-} */
+        if(operacion=="sumar"){
+            sumar(operador1,operador2);
+        }
+        else if(operacion=="restar"){
+            restar(operador1,operador2);
+        }
+        else if(operacion=="multiplicar"){
+            multiplicar(operador1,operador2);
+        }
+        else if(operacion=="dividir"){
+            dividir(operador1,operador2);
+        }
+        else{
+            alert("Operación no contemplada");
+        }
+        repetir=prompt("¿Desea repetir?");
+    }while (repetir=="si");*/
