@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        form {
+            border: 3px solid #007BFF;
+            padding: 15px;
+            margin: 1rem;
+            border-radius: 8px;
+        }
+        img{
+            height: 500px;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="display-4 ml-4">Registra a tu mascota</h1>
+        <div class="row row-eq-height">
+            <div class="col-6">
+                <form method="POST" action="registrado.html" id="myFormId" onsubmit="return registerValidate()"
+                    name="myForm">
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputName">Nombre</label>
+                            <input type="text" name="inputName" class="form-control" id="inputName">
+                            <div class="invalid-feedback" id="errorName"></div>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputAge">Edad</label>
+                            <input type="text" name="inputAge" class="form-control" id="inputAge">
+                            <div class="invalid-feedback" id="errorAge"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="inputBreed">Raza</label>
+                                <select id="inputBreed" class="form-control">
+                                    <option selected value=""></option>
+                                    <option>Pastor Alemán</option>
+                                    <option>Rotweiller</option>
+                                    <option>Husky</option>
+                                    <option>Chihuahua</option>
+                                </select>
+                                <div class="invalid-feedback" id="errorBreed"></div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="inputEmail">Email</label>
+                                <input type="text" name="inputEmail" class="form-control" id="inputEmail">
+                                <div class="invalid-feedback" id="errorEmail"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Contraseña</label>
+                                <input type="password" name="inputPassword" class="form-control" id="inputPassword">
+                                <div class="invalid-feedback" id="errorPassword">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword1">Repite la contraseña</label>
+                                <input type="password" name="inputPassword1" class="form-control" id="inputPassword1">
+                                <div class="invalid-feedback" id="errorPassword1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Quiero recibir correos promocionales
+                                    </label>
+                                    <div class="invalid-feedback" id="errorCheck"></div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-12">Registro</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d-none d-md-block d-lg-block d-xl-block col-md-6 col-lg-6 col-xl-6">
+                <img src="/img/perro.png" alt="Perro" class="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="/js/Formulario.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
