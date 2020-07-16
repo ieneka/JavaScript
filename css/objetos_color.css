@@ -1,0 +1,32 @@
+#bus{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+#stars{
+    list-style: none;
+}
+#stars li{
+    display: inline;
+}
+#stars i{
+    font-size: 50px;
+    position: relative;
+    float: left;
+}
+.active{
+    color: yellow;
+}
+#stars{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#stars li:hover ~ li,
+#stars li:focus ~ li,
+#stars li:hover {
+      color: yellow;
+      cursor: pointer;
+  }
+#stars li{
+    float: left;
+}
