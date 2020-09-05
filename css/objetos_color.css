@@ -20,6 +20,7 @@
 #stars{
     display: flex;
     flex-direction: row-reverse;
+    height: 50px;
 }
 #stars li:hover ~ li,
 #stars li:focus ~ li,
