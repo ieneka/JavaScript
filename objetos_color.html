@@ -6,15 +6,19 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/f0ed03712c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/objetos_color.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
 </head>
-<body ondblclick="clickReset()">
-    <div id="bus">
+<body >
+    <div id="bus" class="bus" style="height: 500px;" >
         <ul id="stars">
-            <li><i class="fas fa-star" id="autobus5" onmouseout="reset(5)" onclick="addRates(5),clickar()"></i></li>
-            <li><i class="fas fa-star" id="autobus4"  onmouseout="reset(4)" onclick="addRates(4),clickar()"></i></li>
-            <li><i class="fas fa-star" id="autobus3" onmouseout="reset(3)" onclick="addRates(3),clickar()"></i></li>
-            <li><i class="fas fa-star" id="autobus2" onmouseout="reset(2)" onclick="addRates(2),clickar()"></i></li>
-            <li><i class="fas fa-star" id="autobus1" onmouseout="reset(1)" onclick="addRates(1),clickar()"></i></li>
+            <li><i class="fas fa-star" id="autobus5" onclick="addRates(5)" ></i></li>
+            <li><i class="fas fa-star" id="autobus4" onclick="addRates(4)" ></i></li>
+            <li><i class="fas fa-star" id="autobus3" onclick="addRates(3)" ></i></li>
+            <li><i class="fas fa-star" id="autobus2" onclick="addRates(2)" ></i></li>
+            <li><i class="fas fa-star" id="autobus1" onclick="addRates(1)" ></i></li>
         </ul>
     </div>
     
